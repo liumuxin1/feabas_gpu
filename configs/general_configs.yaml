@@ -1,0 +1,14 @@
+working_directory: /CX/neuro_segment/user/jinhaiqun/out/RB98/work_dir_test2   # project specific working directory
+cpu_budget: null      # CPU cores to use (estimated target only, no hard control)
+parallel_framework: process # process/thread/dask, either using Python's innate multiprocessing/multithreading or Dask LocalCluster
+
+full_resolution: 4  # in nanometers. If the stitch coordinate files don't have resolution, this will be used
+section_thickness: 34 # in nanometers. If also provided in the stitching config file, this will be overridden
+
+# logging configs
+logging_directory: null # directory to save log files. if set to null, default to working_directory/logs
+logfile_level: WARNING  # DEBUG, INFO, WARNING, ERROR or NONE
+console_level: INFO
+archive_level: INFO
+
+tensorstore_timeout: null # if a call to tensorstore hangs beyond this value in seconds, raise TimeoutError
